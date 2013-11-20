@@ -148,7 +148,7 @@ use current versions of JQuery. [This fork](https://github.com/buster84/play-exa
 ER Design
 ---------
 
-![screenshot](https://raw.github.com/ics-software-engineering/play-example-form/master/doc/ER-Diagram.png)
+![screenshot](https://raw.github.com/ekomiyama/play-example-form/master/doc/ER-Diagram.png)
 
 This diagram explains the relationships in the database regarding the student form. The student entity has
 a one-to-many relationship with the Major entity and Hobby entity where there can be a possible zero Major
