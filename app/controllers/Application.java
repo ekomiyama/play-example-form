@@ -16,7 +16,7 @@ import views.html.index;
  *
  * @author Philip Johnson
  */
-public class Application extends Controller {
+public class Application extends Controller { 
 
   /**
    * Returns the page where the form is filled by the Student whose id is passed, or an empty form
