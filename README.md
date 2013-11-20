@@ -144,7 +144,20 @@ have a Maven dependency of JQuery 1.9.0.  [Build.scala](https://github.com/ics-s
 illustrates how to load a newer version of Bootstrap with an older, HTMLUnit-compliant version of JQuery.
 Another solution is to use [PhantomJS](http://phantomjs.org/) rather than HTMLUnit; then you can
 use current versions of JQuery. [This fork](https://github.com/buster84/play-example-form) shows how to use PhantomJS.
-        
+
+ER Design
+---------
+
+![screenshot](https://raw.github.com/ics-software-engineering/play-example-form/master/doc/ER-Diagram.png)
+
+This diagram explains the relationships in the database regarding the student form. The student entity has
+a one-to-many relationship with the Major entity and Hobby entity where there can be a possible zero Major
+or Hobby relationships with a student. There are also one-to-one relationships with the student entity and
+the GPA and Level entities. For every student, there must be a GPA and Level connected with that student.
+
+The Relationships are set up so that the GPA, Level, Hobby, and Major entities are separate from the student 
+entity to make it so that they can individually be edited and deleted. 
+
 Issues
 ------
 
